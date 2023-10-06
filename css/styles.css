@@ -1,0 +1,226 @@
+:root{
+  --background-color:lightgrey;
+  --h1-color:rgb(30, 3, 3);
+  --h1-font-size:50px;
+  --h1-font-weight:500px;
+  --p-font-size:20px;
+  --p-font-weight:5px;
+  --p-color:black;
+  --a-color:#35347b;
+  --a-hover-color:black;
+  --a-visited-color:#05676e;
+  --a-active-color:blueviolet;
+  --button-background-color:darkorange;
+  --button-hover-background-color:blue;
+ --project-list-backgound-color:lightgrey;
+ --project1-project2-project3-project4-project5-project6-background: #aee4df;
+ --project1-project2-project3-project4-project5-project6-border:5px solid rgb(245, 179, 219);
+ --button-hover-background-color:#7b3551;
+ --button-hover-border:hotpink;
+
+
+}body{
+      background-color:var(--background-color);        ;
+         font-family: 'PT Sans Narrow', sans-serif;
+        font-family: 'Roboto', sans-serif;
+}
+h1{
+      font-size: var(--h1-font-size);
+      font-weight:var(--h1-font-weight);
+      text-decoration: underline;
+      color:var(--h1-color);
+      
+  }
+p{
+      font-size:var(--p-font-size);
+      font-weight:(--p-font-weight);
+      /*text-decoration: underline;*/
+      color:(--p-color);
+}  
+a{
+  color:var(--a-color);
+}
+a:hover{
+     text-decoration:dotted;
+     color:var(--a-hover-color);
+
+}
+a:visited{
+      color:var(--a-visited-color);
+}
+a:active{
+      color:var(--a-active-color);
+}
+button{
+      background-color:var(--button-background-color);
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 15px;
+}
+button:hover{
+      background-color:var(--button-hover-background-color);
+}
+             *{ box-sizing:border-box;}
+             .contact{
+                  text-align: center;
+             }
+             .form{
+                  text-align: center;
+             }
+       
+.page-header
+{display:flex;
+width:100%;
+padding:20px;
+}
+.page-header_item
+{ 
+  flex:0 1 200px;
+}
+.page-header_item:last-child
+{
+      flex-grow: 1;
+      text-align: right;
+}
+.navigation-list li{
+      display:inline-block;
+      margin-left: 10px;
+}
+ 
+.project-list{
+      display:grid;
+      background-color:var(--project-list-backgound-colorbackground-color);
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin:40px;
+      grid-gap:20px;
+      
+}
+/*.project1 {
+      background-color: lightgray;
+      border: 5px solid rgb(245, 179, 229);
+    }
+.project2 {
+      background-color: lightgray;
+      border: 5px solid rgb(245, 179, 201);
+    }
+.project3 {
+      background-color: lightgray;
+      border: 5px solid rgb(245, 179, 240);
+    }
+.project4 {
+      background-color: lightgray;
+      border: 5px solid rgb(245, 179, 236);
+    }
+.project5 {
+      background-color: lightgray;
+      border: 5px solid rgb(245, 179, 236);
+    }
+.project6 {
+      background-color: lightgray;
+      border: 5px solid rgb(245, 179, 219);
+    }*/
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6{ 
+      background:var(--project1-project2-project3-project4-project5-project6-background);
+      border:var(--project1-project2-project3-project4-project5-project6-border) ;
+    }
+
+.page-footer{
+      text-align:center;
+      
+}
+@media all and (max-width: 750px) 
+{
+ .project-list 
+ {
+   grid-template-columns: 1fr 1fr;
+} }
+      
+ @media all and (max-width: 500px)
+  {
+   .project-list 
+   {
+   grid-template-columns: 1fr ;
+ }}
+   .button:hover {
+      border:var(--button-hover-border);
+     display:inline-block;
+     font-family: inherit;
+      background-color:var(--button-hover-background-color) ;
+      text-decoration:azure;
+       padding: 10px;
+      border-radius: 8px;
+     transition-duration: 0.9s;
+      
+          }
+          .about
+          {
+            text-align: center;
+          }
+          
+          
+          .cloud-front
+          {animation-duration: 40s;
+            animation-name: cloud-move;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function:linear;
+            }
+          @keyframes cloud-move {
+            from {
+              transform: translate(0, 50px);
+            }
+            to {
+              transform: translate(200px, 50px);
+            }
+          }
+          @keyframes cloud-move-reverse {
+            from {
+              transform: translate(446px, 48px);
+            }
+            to {
+              transform: translate(100px, 48px);
+            }
+          }
+          .sun {
+            animation-duration: 7s;
+            animation-name: color-change;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+          }
+          @keyframes color-change{
+            from{
+                fill:#edc655;
+            }
+      to{ fill:#f76414;
+
+      }}
+      .cloud-back
+          {animation-duration: 40s;
+            animation-name: cloud-move;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function:linear;
+            }
+          @keyframes cloud-move {
+            from {
+              transform: translate(100, 150px);
+            }
+            to {
+              transform: translate(200px, 50px);
+            }
+          }
+          @keyframes cloud-move-reverse {
+            from {
+              transform: translate(446px, 48px);
+            }
+            to {
+              transform: translate(100px, 48px);
+            }
+          }
